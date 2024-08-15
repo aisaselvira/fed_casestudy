@@ -17,15 +17,18 @@ const BlogList = () => {
   return (
     <div className="container mx-auto py-8">
       {blogs.map((blog) => (
-        <div key={blog.id} className="bg-white p-6 rounded-2xl shadow-md my-4">
-          {/* Render Image */}
+        <div
+          key={blog.id}
+          className="p-6 rounded-2xl shadow-md my-4"
+          style={{ backgroundColor: '#F2F5F6' }}
+        >
           {blog.thumbnail && blog.thumbnail.preview && (
             <div className="mb-4">
               <Image
-                src={blog.thumbnail.preview} 
+                src={blog.thumbnail.preview}
                 alt={blog.judul}
-                width={600} 
-                height={400} 
+                width={600}
+                height={400}
                 className="object-cover rounded-md"
               />
             </div>
