@@ -15,7 +15,7 @@ const BlogList = () => {
   if (status === 'failed') return <p>Error fetching blogs</p>;
 
   return (
-    <div className="container mx-auto py-8">
+    <div className="container mx-auto py-16 px-4 lg:px-16"> 
       <h2 className="text-3xl font-bold text-center mb-8">Blog Terbaru</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {blogs.map((blog) => (

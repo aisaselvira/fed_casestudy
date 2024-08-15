@@ -3,10 +3,10 @@ import Header from './Header';
 
 const Hero = () => {
   return (
-    <div className="pt-10 pb-20">
+    <div className="pt-10 pb-20 px-4 lg:px-16">
       <Header />
-      <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center px-4">
-        <div className="max-w-lg mb-8 lg:mb-0">
+      <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center"> {/* Menggunakan justify-between */}
+        <div className="max-w-lg mb-8 lg:mb-0 lg:mr-4"> {/* Mengatur margin kanan */}
           <p className="text-blue-600 text-sm mb-2">
             Mau Jadi Generasi Mahir Teknologi, Kuat Iman?
           </p>
@@ -20,7 +20,7 @@ const Hero = () => {
             Mencetak generasi unggul yang mahir di bidang teknologi digital
             dan teguh dalam pemahaman Islam Ahlu Sunnah Wal Jama'ah
           </p>
-          <div className="flex items-center mt-6 border-2 border-blue-500 rounded-full px-2 py-1">
+          <div className="flex items-center mt-6 border-2 border-blue-500 rounded-full px-4 py-2">
             <span className="text-gray-700 pr-4">
               Jago IT Rajin Ngaji bersama Al Kautsar
             </span>
@@ -40,7 +40,7 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 lg:ml-4"> {/* Mengatur margin kiri */}
           <Image
             src="/assets/hero.png"
             alt="Hero Image"
