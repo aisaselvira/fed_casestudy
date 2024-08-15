@@ -22,10 +22,10 @@ const BlogList = () => {
           {blog.thumbnail && blog.thumbnail.preview && (
             <div className="mb-4">
               <Image
-                src={blog.thumbnail.preview} // Path ke gambar dari API
+                src={blog.thumbnail.preview} 
                 alt={blog.judul}
-                width={600} // Sesuaikan dengan ukuran yang diinginkan
-                height={400} // Sesuaikan dengan ukuran yang diinginkan
+                width={600} 
+                height={400} 
                 className="object-cover rounded-md"
               />
             </div>
