@@ -4,7 +4,7 @@ import BlogList from '@/components/BlogList';
 
 export default function Home() {
   return (
-    <div className="bg-dark min-h-screen">
+    <div className="">
       <Head>
         <title>Landing Page</title>
         <meta name="description" content="Landing Page Example" />
